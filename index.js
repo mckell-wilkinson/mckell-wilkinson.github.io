@@ -3,15 +3,13 @@
 let headerArray = document.querySelectorAll(".accordion-header");
 
 for (let i = 0; i < headerArray.length; i++) {
-  let header = document.getElementById(`accordion-header-${i}`);
-  let body = document.getElementById(`body-${i}`);
+  let accordHeader = document.getElementById(`accordion-header-${i}`);
+  let accordBody = document.getElementById(`body-${i}`);
 
   let toggleAccordion = () => {
-    body.classList.toggle("hide");
-    header.classList.toggle("active");
+    accordBody.classList.toggle("hide");
+    accordHeader.classList.toggle("active");
   };
 
-  header.addEventListener("click", toggleAccordion);
+  accordHeader.addEventListener("click", toggleAccordion);
 }
-
-console.log("test");

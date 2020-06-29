@@ -4,26 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
-    <header class="hero">
       <section class="disclaimer">
+          <div class="content">
         <p>
           Rates from 39.9% APR to 1333% APR - Please see representative APR
           example below - Warning: Late repayment can cause you serious money
           problems. For help, go to moneyadviceservice.org.uk
         </p>
-        <img src="img/x-circle.svg" alt="" />
+        <img id="exit-disclaimer"src="img/x-circle.svg" alt="" />
+        
+        </div>  
       </section>
+      <header class="hero">
       <div class="content">
         <nav>
           <ul>
             <li>
-              <img src="img/logo.svg" alt="" />
+              <img class="logo" src="img/logo.svg" alt="" />
             </li>
             <li class="menu-container">
-              <ul>
+              <ul class="hide desktop-menu">
                 <li>
                   <a href="" class="button button-clear">APPLY NOW</a>
                 </li>
@@ -37,15 +41,16 @@
                   <a href="">Contact</a>
                 </li>
               </ul>
+                  <img class="mobile-menu" src="img/menu.svg" alt="">
             </li>
           </ul>
         </nav>
       </div>
       <div class="content">
         <div class="intro">
-          <h2>Borrow from <span class="pink">£100 to £200</span></h2>
-          <h1>Super fast and easy loans</h1>
-          <h2>
+          <h2 class="intro-top">Borrow from <span class="pink">£100 to £200</span></h2>
+          <h1>Super fast<br>and easy loans</h1>
+          <h2 class="intro-bottom">
             Apply now and
             <span class="bold"
               >receive cash by <span id="time">15:30</span></span
@@ -115,7 +120,7 @@
         <div class="flex-left">
           <h2>Poor credit rating? Don't let that put you off</h2>
           <p>We specialise in finding short term, flexible loans to suit your needs. We’re here to help you get the best deal, it’s as simple as that.</p>
-          <a href="" class="button solid">APPLY NOW</a>
+          <a href="" class="button button-solid">APPLY NOW</a>
         </div>
         <div class="flex-right">
             <ul class="checklist">
