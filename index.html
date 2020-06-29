@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
       <section class="disclaimer">
           <div class="content">
-        <p>
+        <p class="white">
           Rates from 39.9% APR to 1333% APR - Please see representative APR
           example below - Warning: Late repayment can cause you serious money
           problems. For help, go to moneyadviceservice.org.uk
@@ -48,12 +48,11 @@
       </div>
       <div class="content">
         <div class="intro">
-          <h2 class="intro-top">Borrow from <span class="pink">£100 to £200</span></h2>
-          <h1>Super fast<br>and easy loans</h1>
-          <h2 class="intro-bottom">
+          <h2 class="intro-top font-regular">Borrow from <span class="pink font-bold">£100 to £2000</span></h2>
+          <h1 class="font-black">Super fast<br>and easy loans</h1>
+          <h2 class="intro-bottom font-regular">
             Apply now and
-            <span class="bold"
-              >receive cash by <span id="time">15:30</span></span
+            <span class="font-bold">receive cash by <span id="time">15:30</span></span
             >
           </h2>
           <a href="" class="button button-solid">APPLY NOW</a>
@@ -65,17 +64,17 @@
         <ul>
           <li>
             <img src="img/credit-card.svg" alt="Credit card" />
-            <h3>100% no fee</h3>
+            <h4>100% no fee</h4>
             <p>Get cash paid into your account promptly</p>
           </li>
           <li>
             <img src="img/settings.svg" alt="Settings cog" />
-            <h3>Simple and easy</h3>
+            <h4>Simple and easy</h4>
             <p>Every day we aim to find 100s of people their perfect loan</p>
           </li>
           <li>
             <img src="img/shield.svg" alt="Shield" />
-            <h3>Secure UK site</h3>
+            <h4>Secure UK site</h4>
             <p>
               Confidential and secure 256 bit protection for your peace of mind
             </p>
@@ -87,8 +86,11 @@
       <div class="content">
         <h2>How much would you like to borrow?</h2>
         <form action="">
-          <label for="fname">I would like to borrow...</label>
-          <input type="text" id="borrow" name="borrow" />
+          <label for="fname" class="font-regular">I would like to borrow...</label>
+          <div class="position-gbp">
+            <span class="gbp font-bold">£</span>
+          <input type="number" value="2000" id="borrow" name="borrow" min="100" max="2000" class="font-bold"/>
+          </div>    
           <img src="img/minus-circle.svg" id="minus" alt="minus" />
           <input type="range" id="range" name="range" min="100" max="2000" />
           <img src="img/plus-circle.svg" id="plus" alt="plus" />
