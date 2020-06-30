@@ -59,45 +59,23 @@
         </div>
       </div>
     </header>
-    <section class="benefits">
-      <div class="content">
-        <ul>
-          <li>
-            <img src="img/credit-card.svg" alt="Credit card" />
-            <h4>100% no fee</h4>
-            <p>Get cash paid into your account promptly</p>
-          </li>
-          <li>
-            <img src="img/settings.svg" alt="Settings cog" />
-            <h4>Simple and easy</h4>
-            <p>Every day we aim to find 100s of people their perfect loan</p>
-          </li>
-          <li>
-            <img src="img/shield.svg" alt="Shield" />
-            <h4>Secure UK site</h4>
-            <p>
-              Confidential and secure 256 bit protection for your peace of mind
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
+
     <section class="amount white">
       <div class="content">
-        <h2>How much would you like to borrow?</h2>
-        <form action="">
+        <h3>How much would you like to borrow?</h3>
+        <form action="" class="form">
           <label for="fname" class="font-regular">I would like to borrow...</label>
           <div class="position-gbp">
             <span class="gbp font-bold">£</span>
-          <input type="number" value="2000" id="borrow" name="borrow" min="100" max="2000" class="font-bold"/>
-          </div>    
-          <img src="img/minus-circle.svg" id="minus" alt="minus" />
-          <input type="range" id="range" name="range" min="100" max="2000" />
-          <img src="img/plus-circle.svg" id="plus" alt="plus" />
-          <input type="submit" class="button button-solid" value="Submit" />
+          <input type="number" value="1000" id="borrow" name="borrow" min="100" max="2000" class="font-bold input-number"/>
+          </div>  
+          <div class="range-container">  
+          <input type="range" id="range" class="range" name="range" value="1000" min="100" max="2000" step="50" />
+          </div>
+          <input type="submit" class="button button-solid submit" value="APPLY NOW" />
         </form>
         <div class="representative">
-          <h4>Representative example</h4>
+          <h6>Representative example</h6>
           <p>
             Representative Example: Amount of credit £1200.00 for 18 months at
             £90.46 per month. Total amount repayable is £1628.28. Interest:
@@ -117,12 +95,35 @@
         </div>
       </div>
     </section>
+    <section class="benefits">
+      <div class="content">
+        <ul>
+          <li>
+            <img src="img/credit-card.svg" alt="Credit card" />
+            <h3>100% no fee</h3>
+            <p>Get cash paid into your account promptly</p>
+          </li>
+          <li>
+            <img src="img/settings.svg" alt="Settings cog" />
+            <h3>Simple and easy</h3>
+            <p>Every day we aim to find 100s of people their perfect loan</p>
+          </li>
+          <li>
+            <img src="img/shield.svg" alt="Shield" />
+            <h3>Secure UK site</h3>
+            <p>
+              Confidential and secure 256 bit protection for your peace of mind
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
     <section class="poor-credit">
       <div class="content">
         <div class="flex-left">
-          <h2>Poor credit rating? Don't let that put you off</h2>
+          <h2 class="dark-blue">Poor credit rating? Don't let that put you off</h2>
           <p>We specialise in finding short term, flexible loans to suit your needs. We’re here to help you get the best deal, it’s as simple as that.</p>
-          <a href="" class="button button-solid">APPLY NOW</a>
+          <a href="" class="button button-solid hide">APPLY NOW</a>
         </div>
         <div class="flex-right">
             <ul class="checklist">
@@ -147,15 +148,16 @@
                     <h5>Getting that dream purchase</h5>
                 </li>
             </ul>
+            <a href="" class="button button-solid">APPLY NOW</a>
         </div>
       </div>
     </section>
     <section class="faqs">
         <div class="content">
-            <h2>Frequently asked questions about our loans</h2>
+            <h2 class="white">Frequently asked questions about our loans</h2>
      <div class="accordion">
         <div class="item">
-          <div class="accordion-header" id="accordion-header-0">Lorem ipsum dolor sit</div> 
+          <div class="accordion-header" id="accordion-header-0"><h6>How does this website work?</h6></div> 
           <div class="tet">
         <div class="accordion-body hide" id="body-0">
            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum quae laudantium corrupti accusantium sunt corporis suscipit voluptatibus quod doloremque voluptatem voluptate cum excepturi molestias possimus totam similique repellat at nulla non aperiam, iste amet ex molestiae hic. Deserunt iusto ullam tempore, earum autem aperiam voluptatum porro ipsum laborum doloribus atque! Porro voluptates a fugiat rem. Alias quibusdam et voluptas, quod non rem eligendi veniam quidem totam. Doloremque pariatur sed earum perferendis autem aspernatur modi omnis et. Repellat eos nihil quos fuga, quae nam quis sint molestiae quas eaque velit alias aut ut deserunt quasi debitis magnam in corporis possimus error.</p>
@@ -166,7 +168,7 @@
           </div>
 
           <div class="item">
-            <div class="accordion-header" id="accordion-header-1">Lorem ipsum?</div> 
+            <div class="accordion-header" id="accordion-header-1"><h6>What do I need to have before I apply for a loan?</h6></div> 
           <div class="accordion-body hide" id="body-1">
             
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, ut. Quibusdam mollitia officiis saepe, placeat, doloremque quod voluptatibus exercitationem ut voluptates veritatis totam. Ab odit ratione tempora, quibusdam voluptas exercitationem?</p>
@@ -176,7 +178,7 @@
             </div>
         
         <div class="item">
-          <div class="accordion-header" id="accordion-header-2">Lorem ipsum dolor sit amet</div> 
+          <div class="accordion-header" id="accordion-header-2"><h6>Do you run a credit check when I apply?</h6></div> 
         <div class="accordion-body hide" id="body-2">
         
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At odio reprehenderit deleniti incidunt nam ad consectetur consequuntur natus harum? Eum.</p>
@@ -185,7 +187,7 @@
           </div>
 
         <div class="item">
-          <div class="accordion-header" id="accordion-header-3">Lorem</div> 
+          <div class="accordion-header" id="accordion-header-3"><h6>What if I have bad credit?</h6></div> 
         <div class="accordion-body hide" id="body-3">
           
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
@@ -194,14 +196,14 @@
           </div>
 
         <div class="item">
-          <div class="accordion-header" id="accordion-header-4">Lorem ipsum dolor sit amet consectetur adipisicing elit</div> 
+          <div class="accordion-header" id="accordion-header-4"><h6>How quickly can I get a loan?</h6></div> 
         <div class="accordion-body hide" id="body-4">
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam in fugit magnam ipsum vitae ipsa alias saepe provident voluptates libero placeat nobis porro animi unde fugiat neque, quod, mollitia distinctio commodi quia magni? At necessitatibus hic eum, error animi debitis.</p>         
           </div>
           </div>
   
         <div class="item">
-          <div class="accordion-header" id="accordion-header-5">Lorem ipsum dolor sit amet consectetur.</div> 
+          <div class="accordion-header" id="accordion-header-5"><h6>How much does it cost?</h6></div> 
         <div class="accordion-body hide" id="body-5">
           
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil quam assumenda accusantium voluptate dolore velit expedita molestiae tempora, numquam atque nam ipsum consectetur quisquam sequi itaque aliquam dignissimos unde quas! Odio perferendis eum blanditiis sed amet consectetur sunt aut dignissimos a, quidem atque odit iusto deserunt rerum illo distinctio incidunt et provident sit enim iste sapiente aliquid! Fugiat, iusto cum.</a>
@@ -209,14 +211,7 @@
           
           </div>
         </div>
-        <div class="item">
-          <div class="accordion-header" id="accordion-header-6">Lorem ipsum</div> 
-        <div class="accordion-body hide" id="body-6">
-          
-           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione consectetur dolore dolorem corporis, pariatur ipsa nostrum recusandae explicabo, maiores distinctio quos nobis! Recusandae accusamus sapiente provident distinctio vel blanditiis? Delectus amet quas quaerat! Corrupti, culpa. Quo quis, commodi, dolorum tempore quaerat magnam doloremque doloribus placeat, praesentium nam consequuntur repellat. Suscipit fugiat dolor quasi tenetur. Et asperiores quibusdam explicabo omnis, aliquam dolorum pariatur itaque. Inventore ratione, minus cum dolorem incidunt eos odio omnis dignissimos aliquid eveniet dolores ipsam voluptates repellat illo!</p>
-          
-          </div>
-          </div>
+
         </div>
         </div>
     </section>
