@@ -6,7 +6,7 @@ for (let i = 0; i < headerArray.length; i++) {
   const accordHeader = document.getElementById(`accordion-header-${i}`);
   const accordBody = document.getElementById(`body-${i}`);
 
-  function toggleAccordion() {
+  let toggleAccordion = () => {
     accordBody.classList.toggle("hide");
     accordHeader.classList.toggle("active");
   }
