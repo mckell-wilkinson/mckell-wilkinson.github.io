@@ -20,6 +20,10 @@ function checkTime() {
     futureMins = 0 + futureMins.toString();
   }
 
+  if (futureHour < 10) {
+    futureHour = 0 + futureHour.toString();
+  }
+
   var time = document.getElementById("time");
   var timeParent = document.getElementById("insert-time");
   timeParent.removeChild(time);
