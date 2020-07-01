@@ -9,7 +9,7 @@ for (let i = 0; i < headerArray.length; i++) {
   let toggleAccordion = () => {
     accordBody.classList.toggle("hide");
     accordHeader.classList.toggle("active");
-  }
+  };
 
   accordHeader.addEventListener("click", toggleAccordion);
 }
