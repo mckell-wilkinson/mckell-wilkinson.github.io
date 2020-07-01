@@ -13,7 +13,7 @@
         <p class="white">
           Rates from 39.9% APR to 1333% APR - Please see representative APR
           example below - Warning: Late repayment can cause you serious money
-          problems. For help, go to moneyadviceservice.org.uk
+          problems. For help, go to <a href="">moneyadviceservice.org.uk</a>  
         </p>
         <img id="exit-disclaimer"src="img/x-circle.svg" alt="" />
         
@@ -24,21 +24,22 @@
         <nav>
           <ul>
             <li>
-              <img class="logo" src="img/logo.svg" alt="" />
+              <img class="logo" src="img/logo.png" alt="" />
+              <img class="logo-oppo hide" src="img/logo-oppo.png" alt="" />
             </li>
             <li class="menu-container">
-              <ul class="hide desktop-menu">
+              <ul class="hide desktop-menu white">
                 <li>
-                  <a href="" class="button button-clear">APPLY NOW</a>
+                  <a href="" class="button button-white">APPLY NOW</a>
                 </li>
                 <li>
-                  <a href="">FAQs</a>
+                  <a class="white" href="">FAQs</a>
                 </li>
                 <li>
-                  <a href="">How it works</a>
+                  <a class="white" href="">How it works</a>
                 </li>
                 <li>
-                  <a href="">Contact</a>
+                  <a class="white" href="">Contact</a>
                 </li>
               </ul>
                   <img class="mobile-menu" src="img/menu.svg" alt="">
@@ -48,11 +49,11 @@
       </div>
       <div class="content">
         <div class="intro">
-          <h2 class="intro-top font-regular">Borrow from <span class="pink font-bold">£100 to £2000</span></h2>
+          <h2 class="intro-top font-regular">Borrow from<br> <span class="pink font-bold">£100 to £2000</span></h2>
           <h1 class="font-black">Super fast<br>and easy loans</h1>
           <h2 class="intro-bottom font-regular">
             Apply now and
-            <span class="font-bold">receive cash by <span id="time">15:30</span></span
+            <span class="font-bold" id="insert-time">receive cash by <span id="time"></span></span
             >
           </h2>
           <a href="" class="button button-solid">APPLY NOW</a>
@@ -64,14 +65,20 @@
       <div class="content">
         <h3>How much would you like to borrow?</h3>
         <form action="" class="form">
-          <label for="fname" class="font-regular">I would like to borrow...</label>
+          <label for="fname" class="font-regular">Borrow from £100 to £2000</label>
+          <ul class="flex-form">
+          <li>
           <div class="position-gbp">
             <span class="gbp font-bold">£</span>
           <input type="number" value="1000" id="borrow" name="borrow" min="100" max="2000" class="font-bold input-number"/>
-          </div>  
+          </div> 
+          </li>
+          <li> 
           <div class="range-container">  
           <input type="range" id="range" class="range" name="range" value="1000" min="100" max="2000" step="50" />
           </div>
+          </li>
+          </ul>
           <input type="submit" class="button button-solid submit" value="APPLY NOW" />
         </form>
         <div class="representative">
@@ -99,21 +106,27 @@
       <div class="content">
         <ul>
           <li>
+            <div class="benefit-item">
             <img src="img/credit-card.svg" alt="Credit card" />
-            <h3>100% no fee</h3>
+            <h4>100% no fee</h4>
             <p>Get cash paid into your account promptly</p>
+            </div>
           </li>
           <li>
+            <div class="benefit-item">
             <img src="img/settings.svg" alt="Settings cog" />
-            <h3>Simple and easy</h3>
+            <h4>Simple and easy</h4>
             <p>Every day we aim to find 100s of people their perfect loan</p>
+            </div>
           </li>
           <li>
+            <div class="benefit-item">
             <img src="img/shield.svg" alt="Shield" />
-            <h3>Secure UK site</h3>
+            <h4>Secure UK site</h4>
             <p>
               Confidential and secure 256 bit protection for your peace of mind
             </p>
+            </div>
           </li>
         </ul>
       </div>
@@ -216,7 +229,43 @@
         </div>
     </section>
     <footer>
-        This is the footer
+        <div class="content white">
+          <ul>
+            <li>
+              <img class="footer-logo" src="/img/logo.png" alt="">
+            </li>
+            <li>
+              <ul class="footer-menu">
+                <li><h5>Contact</h5></li>
+                <hr>
+                <ul class="footer-sub-menu">
+                  <li>Contact preferences</li>
+                  <li>Email opt in / out</li>
+                  <li>Affiliate programme</li>
+                </ul>
+                <li><h5>About</h5></li>
+                <hr>
+                <ul class="footer-sub-menu">
+                  <li>Responsible lending</li>
+                  <li>Key information</li>
+                  <li>Fraud awareness</li>
+                  <li>Responsible broking</li>
+                </ul>
+                <li><h5>Privacy</h5></li>
+                <hr>
+                <ul class="footer-sub-menu">
+                  <li>Terms and conditions</li>
+                  <li>GDPR</li>
+                  <li>Affiliate programme</li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+         <h4>MediaBlanket is a credit broker, not a lender.</h4>
+         <p>MediaBlanket Ltd. Registered in the UK: 07949139; Registered address: MediaBlanket Ltd, The Old Bank, 247 Chapel Street, Salford, M3 5EP.  MediaBlanket Ltd is authorised and regulated by the Financial Conduct Authority under Firm Ref 723605. Registered with the Information Commissioner's Office Z3334636.</p>
+        <p>*Subject to lender's requirements and approval based on creditworthiness and affordability checks. Most loans can be paid in to your bank account within one hour although this could take 2-3 days if your bank does not accept faster payments. Please note that not everyone will qualify for the full amount.*</p>
+      <p>We work with a selected group of lenders and brokers to offer you a range of credit and loan products. We may receive a percentage of the loan amount as a commission from a loan provider or broker if you take out one of their products and/or we may receive a fee for introducing you to them.</p> 
+      </div>
     </footer>
     <script src="index.js"></script>
   </body>

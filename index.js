@@ -1,3 +1,45 @@
+//Exit disclaimer ----------------------------------------------------
+
+var exitDisclaimer = document.getElementById("exit-disclaimer");
+var disclaimer = document.querySelector(".disclaimer");
+
+exitDisclaimer.addEventListener("click", function () {
+  disclaimer.style.display = "none";
+});
+
+//Set time in hero section to fifteen minutes in future
+
+function checkTime() {
+  var fifteenMins = 15 * 60 * 1000;
+  var currentDate = new Date();
+  var futureDate = new Date(currentDate.getTime() + fifteenMins);
+  var futureHour = futureDate.getHours();
+  var futureMins = futureDate.getMinutes();
+
+  if (futureMins < 10) {
+    futureMins = 0 + futureMins.toString();
+  }
+
+  var time = document.getElementById("time");
+  var timeParent = document.getElementById("insert-time");
+  timeParent.removeChild(time);
+
+  timeParent.insertAdjacentHTML(
+    "beforeend",
+    `
+  
+  <span id="time">${futureHour}:${futureMins}</span>
+  
+  `
+  );
+}
+
+checkTime();
+
+setInterval(function () {
+  checkTime();
+}, 1000);
+
 //Accordion ---------------------------------------------------------------
 
 const headerArray = document.querySelectorAll(".accordion-header");
@@ -6,10 +48,10 @@ for (let i = 0; i < headerArray.length; i++) {
   const accordHeader = document.getElementById(`accordion-header-${i}`);
   const accordBody = document.getElementById(`body-${i}`);
 
-  let toggleAccordion = () => {
+  function toggleAccordion() {
     accordBody.classList.toggle("hide");
     accordHeader.classList.toggle("active");
-  };
+  }
 
   accordHeader.addEventListener("click", toggleAccordion);
 }
