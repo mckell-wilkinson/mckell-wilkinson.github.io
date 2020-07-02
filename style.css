@@ -286,7 +286,7 @@ ul {
   border-radius: 100%;
   background: #da008a;
   cursor: pointer;
-  margin-top: -10px;
+  /* margin-top: -10px; */
 }
 
 .range::-moz-range-thumb {
