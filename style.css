@@ -75,7 +75,7 @@ hr {
   background-color: #da008a;
   height: 2px;
   border: none;
-  width: 100%;
+  width: 3em;
   display: block;
   margin-left: 0;
 }
@@ -169,6 +169,7 @@ ul {
   background: #000651;
   margin: 0;
   padding: 0.7em 0;
+  z-index: 100;
 }
 
 #exit-disclaimer {
@@ -199,6 +200,84 @@ ul {
 
 /* HERO ------------------------------------------------ */
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.desktop-menu {
+  background: url('img/background.svg');
+  width: 100%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  padding-top: 35%;
+  text-align: center; 
+  animation: fade-in 0.3s ease-in-out;
+
+}
+
+
+.hamburger-container {
+  display: inline-block;
+  cursor: pointer;
+  z-index: 10;
+
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) ;
+  position: fixed;
+  z-index: 3;
+  top: 0.8em;
+  right: 1.2em
+}
+
+.change .bar2 {
+  opacity: 0;
+  
+}
+
+.change .bar3 {
+  transform: rotate(45deg);
+  position: fixed;
+  z-index: 3;
+  top: 0.8em;
+  right: 1.2em
+}
+
+.desktop-menu > li {
+  margin-bottom: 4em;
+}
+
+.desktop-menu > li > a {
+  font-size: 1.5em;  
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+
 .hero {
   background: url("img/hero-bg.png");
   background-repeat: no-repeat;
@@ -220,9 +299,6 @@ ul {
   width: 150px;
 }
 
-.mobile-menu {
-  top: 0;
-}
 
 .intro {
   margin-top: 40%;
@@ -316,7 +392,8 @@ input[type=number] {
   border-radius: 100%;
   background: #da008a;
   cursor: pointer;
-  transform: translateY(-12px);
+  border: none;
+  transform: translateY(-14px);
 }
 
 .range::-moz-range-thumb {
@@ -325,7 +402,7 @@ input[type=number] {
   border-radius: 100%;
   background: #da008a;
   cursor: pointer;
-  transform: translateY(-12px);
+  border: none;
 }
 
 .range::-ms-thumb {
@@ -334,7 +411,8 @@ input[type=number] {
   border-radius: 100%;
   background: #da008a;
   cursor: pointer;
-  margin-top: 22px;
+  margin-top: 26px;
+  border: none;
 }
 
 .range::-webkit-slider-runnable-track {
@@ -508,7 +586,7 @@ footer {
 
 .footer-logo {
   width: 250px;
-  padding: 0 0 2em;
+  padding: 2em 0;
 }
 
 .footer-sub-menu {
@@ -557,20 +635,47 @@ footer {
   body {
     font-size: 20px;
   }
+
+  hr {
+    width: 100%;
+  }
   .content {
     padding: 0;
     width: 85%;
     margin: 0 auto;
   }
 
-  .mobile-menu {
+  .hamburger-container {
     display: none;
   }
+
+
 
   .desktop-menu {
     display: flex;
     font-size: 16px;
+      background: initial;
+      width: initial;
+      position: initial;
+      width: initial;
+      height: initial;
+      left: initial;
+      top: initial;
+      bottom: initial;
+      z-index: initial;
+      padding-top: initial;
+      text-align: initial; 
+      animation: initial;
+    
+    
   }
+
+  .desktop-menu > li > a {
+    font-size: initial;  
+    text-decoration: initial;
+    font-weight: initial;
+  }
+  
 
   .desktop-menu > li {
     margin: 0 0 0 2em;
@@ -613,7 +718,8 @@ footer {
   }
 
   .range {
-    width: 40vw;
+    width: 38vw;
+    margin: 0;
   }
 
   .input-number {
