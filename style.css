@@ -279,7 +279,16 @@ ul {
   color: transparent;
 }
 
-.range::-webkit-slider-thumb, .range::-webkit-media-slider-thumb {
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 2em;
+  width: 2em;
+  border-radius: 100%;
+  background: #da008a;
+  cursor: pointer;
+  margin-top: -10px;
+}
+ .range::-webkit-media-slider-thumb {
   -webkit-appearance: none;
   height: 2em;
   width: 2em;
