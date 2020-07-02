@@ -1,3 +1,5 @@
+AOS.init();
+
 //Exit disclaimer ----------------------------------------------------
 
 let exitDisclaimer = document.getElementById("exit-disclaimer");
