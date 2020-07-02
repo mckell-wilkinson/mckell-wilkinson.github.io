@@ -281,23 +281,23 @@ ul {
 
 .range::-webkit-media-slider-thumb {
   -webkit-appearance: none;
-  height: 2em;
-  width: 2em;
+  height: 3em;
+  width: 3em;
   border-radius: 100%;
   background: #da008a;
   cursor: pointer;
-  margin-top: -8px;
+  margin-top: -15px;
 }
 
 
 .range::-webkit-slider-thumb {
   -webkit-appearance: none;
-  height: 2em;
-  width: 2em;
+  height: 3em;
+  width: 3em;
   border-radius: 100%;
   background: #da008a;
   cursor: pointer;
-  margin-top: -8px;
+  margin-top: -15px;
 }
 
 .range::-moz-range-thumb {
@@ -306,7 +306,7 @@ ul {
   border-radius: 100%;
   background: #da008a;
   cursor: pointer;
-  margin-top: -8px;
+  margin-top: -15px;
 }
 
 .range::-ms-thumb {
@@ -315,7 +315,7 @@ ul {
   border-radius: 100%;
   background: #da008a;
   cursor: pointer;
-  margin-top: -8px;
+  margin-top: -15px;
 }
 
 .range::-webkit-slider-runnable-track {
