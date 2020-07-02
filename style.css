@@ -286,7 +286,7 @@ ul {
   border-radius: 100%;
   background: #da008a;
   cursor: pointer;
-  margin-top: -15px;
+  margin-top: -12px;
 }
 
 
@@ -297,7 +297,7 @@ ul {
   border-radius: 100%;
   background: #da008a;
   cursor: pointer;
-  margin-top: -15px;
+  margin-top: -12px;
 }
 
 .range::-moz-range-thumb {
@@ -306,7 +306,7 @@ ul {
   border-radius: 100%;
   background: #da008a;
   cursor: pointer;
-  margin-top: -15px;
+  margin-top: -12px;
 }
 
 .range::-ms-thumb {
@@ -315,7 +315,7 @@ ul {
   border-radius: 100%;
   background: #da008a;
   cursor: pointer;
-  margin-top: -15px;
+  margin-top: -12px;
 }
 
 .range::-webkit-slider-runnable-track {
