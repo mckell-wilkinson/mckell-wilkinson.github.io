@@ -111,9 +111,9 @@ hr {
 }
 
 .button-white:hover, .button-white:active {
-  background: #fff;
-  color: #da008a;
-  border: solid 2px #fff;
+  background: #da008a;
+  color: #fff;
+  border: solid 2px #da008a;
   }
 
 
