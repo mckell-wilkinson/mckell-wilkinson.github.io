@@ -67,7 +67,8 @@ a {
   font-size: 1em;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   border-bottom: solid 3px #da008a;
 }
 
@@ -105,18 +106,18 @@ hr {
   color: #fff;
 }
 
-.button-solid:hover, .button-solid:active {
-  background: linear-gradient(to right, #ff00e6, #953FFD);
+.button-solid:hover,
+.button-solid:active {
+  background: linear-gradient(to right, #ff00e6, #953ffd);
   border: none;
 }
 
-.button-white:hover, .button-white:active {
+.button-white:hover,
+.button-white:active {
   background: #da008a;
   color: #fff;
   border: solid 2px #da008a;
-  }
-
-
+}
 
 .button-white {
   color: #fff;
@@ -203,7 +204,6 @@ ul {
 @keyframes fade-in {
   from {
     opacity: 0;
-
   }
   to {
     opacity: 1;
@@ -211,7 +211,7 @@ ul {
 }
 
 .desktop-menu {
-  background: url('img/background.svg');
+  background: url("img/background.svg");
   width: 100%;
   position: fixed;
   width: 100%;
@@ -221,17 +221,14 @@ ul {
   bottom: 0;
   z-index: 1;
   padding-top: 35%;
-  text-align: center; 
+  text-align: center;
   animation: fade-in 0.3s ease-in-out;
-
 }
-
 
 .hamburger-container {
   display: inline-block;
   cursor: pointer;
   z-index: 10;
-
 }
 
 .bar1,
@@ -242,20 +239,18 @@ ul {
   background-color: #fff;
   margin: 4px 0;
   transition: 0.4s;
-
 }
 
 .change .bar1 {
-  transform: rotate(-45deg) ;
+  transform: rotate(-45deg);
   position: fixed;
   z-index: 3;
   top: 0.8em;
-  right: 1.2em
+  right: 1.2em;
 }
 
 .change .bar2 {
   opacity: 0;
-  
 }
 
 .change .bar3 {
@@ -263,7 +258,7 @@ ul {
   position: fixed;
   z-index: 3;
   top: 0.8em;
-  right: 1.2em
+  right: 1.2em;
 }
 
 .desktop-menu > li {
@@ -271,12 +266,10 @@ ul {
 }
 
 .desktop-menu > li > a {
-  font-size: 1.5em;  
+  font-size: 1.5em;
   text-decoration: none;
   font-weight: 700;
 }
-
-
 
 .hero {
   background: url("img/hero-bg.png");
@@ -298,7 +291,6 @@ ul {
 .logo {
   width: 150px;
 }
-
 
 .intro {
   margin-top: 40%;
@@ -350,7 +342,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -383,7 +375,6 @@ input[type=number] {
   border-color: transparent;
   color: transparent;
 }
-
 
 .range::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -508,12 +499,13 @@ input[type=number] {
 
 .checklist > li {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
 }
 
 .checklist > li > img {
   margin: 0 0.5em 0 0;
   transform: translateY(0.1em);
+  width: 1.5em;
 }
 .checklist > li > h5 {
   padding: 0 0 1em;
@@ -581,11 +573,11 @@ input[type=number] {
 footer {
   background: #222;
   padding: 2em 0;
-  font-size: 16px;
+  font-size: 0.9em;
 }
 
 .footer-logo {
-  width: 250px;
+  width: 15em;
   padding: 2em 0;
 }
 
@@ -649,33 +641,28 @@ footer {
     display: none;
   }
 
-
-
   .desktop-menu {
     display: flex;
     font-size: 16px;
-      background: initial;
-      width: initial;
-      position: initial;
-      width: initial;
-      height: initial;
-      left: initial;
-      top: initial;
-      bottom: initial;
-      z-index: initial;
-      padding-top: initial;
-      text-align: initial; 
-      animation: initial;
-    
-    
+    background: initial;
+    width: initial;
+    position: initial;
+    width: initial;
+    height: initial;
+    left: initial;
+    top: initial;
+    bottom: initial;
+    z-index: initial;
+    padding-top: initial;
+    text-align: initial;
+    animation: initial;
   }
 
   .desktop-menu > li > a {
-    font-size: initial;  
+    font-size: initial;
     text-decoration: initial;
     font-weight: initial;
   }
-  
 
   .desktop-menu > li {
     margin: 0 0 0 2em;
@@ -698,7 +685,7 @@ footer {
     width: 200px;
   }
   .hero {
-    background: url("img/hero-bg-alt.svg");
+    background: url("img/hero-bg-alt.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -772,7 +759,8 @@ footer {
     margin: 0 0 2em;
   }
 
-  .footer-menu > li, .footer-sub-menu {
+  .footer-menu > li,
+  .footer-sub-menu {
     display: block;
   }
 }
@@ -791,5 +779,127 @@ footer {
 
   .input-number {
     width: 35vw;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  body,
+  .intro {
+    font-size: 26px;
+  }
+
+  nav {
+    padding-top: 1em;
+  }
+
+  .logo-oppo {
+    width: 250px;
+  }
+
+  .desktop-menu > li {
+    margin-left: 3.5em;
+  }
+  .desktop-menu > li > a {
+    font-size: 1.2em;
+  }
+
+  .hero {
+    background-position: center;
+    margin-bottom: 3em;
+  }
+
+  .range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 5em;
+    width: 5em;
+    transform: translateY(-28px);
+  }
+
+  .range::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 5em;
+    width: 5em;
+    transform: translateY(-28px);
+  }
+
+  .range::-ms-thumb {
+    -webkit-appearance: none;
+    height: 5em;
+    width: 5em;
+    transform: translateY(-28px);
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  body,
+  .intro {
+    font-size: 36px;
+  }
+
+  nav {
+    padding-top: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 2400px) {
+  body,
+  .intro {
+    font-size: 50px;
+  }
+
+  .desktop-menu > li > a {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 3000px) {
+  body,
+  .intro {
+    font-size: 60px;
+  }
+
+  .logo-oppo {
+    width: 400px;
+  }
+
+  .desktop-menu > li {
+    margin-left: 4em;
+  }
+
+  .desktop-menu > li > a {
+    font-size: em;
+  }
+
+  .hero {
+    margin-bottom: 7em;
+    background-position: center;
+  }
+
+  .range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 7em;
+    width: 7em;
+    transform: translateY(-40px);
+  }
+
+  .range::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 7em;
+    width: 7em;
+    transform: translateY(-40px);
+  }
+
+  .range::-ms-thumb {
+    -webkit-appearance: none;
+    height: 7em;
+    width: 7em;
+    transform: translateY(-40px);
+  }
+}
+
+@media only screen and (min-width: 3400px) {
+  body,
+  .intro {
+    font-size: 64px;
   }
 }
